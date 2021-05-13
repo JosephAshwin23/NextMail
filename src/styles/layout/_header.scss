@@ -1,0 +1,13 @@
+header {
+  background: $navyblue;
+  text-align: center;
+  padding: 10px 0;
+  position: absolute;
+  width: 100%;
+  z-index: 5;
+
+  img {
+    width: 100px;
+    cursor: pointer;
+  }
+}

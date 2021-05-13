@@ -1,0 +1,52 @@
+button {
+    img {
+        width: 14px;
+        vertical-align: sub;
+        margin-right: 5px;
+    }
+}
+
+.btn {   
+    outline: none;
+    border: none;
+    cursor: pointer;    
+    border-radius: 50px;
+}
+
+.btn-lg {
+    padding: 15px 0;  
+    width: 130px;
+}
+
+.btn-md {
+    padding: 10px;
+    width: 100px;
+}
+
+.btn-solid {
+    background: $green;   
+    color: white;
+
+    &:hover {
+        @include boxshadow(8px, 2px, 62px, -8px, rgba(0,185,110,0.6));       
+
+    }
+}
+
+.btn-outline {
+   border: 1px solid #81869f;
+   color: #999eb1;
+   background: transparent;
+
+   &:hover {
+    background-color: #81869f;    
+    color: white;
+    transition: 0.2s ease-in; 
+    
+    img {
+        filter: brightness(0) invert(1);       
+    }
+   }
+
+
+}

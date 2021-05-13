@@ -1,0 +1,22 @@
+
+@mixin boxshadow($hor, $ver, $blur, $spread, $color) {
+  box-shadow: $hor $ver $blur $spread $color;
+  -webkit-box-shadow: $hor $ver $blur $spread $color;
+  -moz-box-shadow: $hor $ver $blur $spread $color;
+}
+
+@mixin  greyline($width,$left){
+  &::after {
+    content: "";
+    height: 1px;
+    width: $width;
+    left: $left;
+    bottom: 0;
+    background: $linegrey;
+    position: absolute;
+    opacity: 0.6;
+  }
+}
+
+
+

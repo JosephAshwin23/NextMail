@@ -1,0 +1,111 @@
+.mail {
+  flex-grow: 4;
+  padding: 67px 30px 0 30px;
+
+  ul {
+    position: relative;
+    padding-bottom: 20px;
+    display: flex;
+    li {
+      border: 1px solid $textgrey-dark;
+      width: 45px;
+      height: 45px;
+      border-radius: 100%;
+      margin-right: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .icon {
+        fill: #8E8E93;
+      }
+
+      &:hover {
+        background-color: $textgrey-dark;
+        transition: 0.2s ease-in;
+        .icon {
+          // filter: brightness(0) invert(1);
+          fill: #FFFFFF !important;
+        }
+      }
+    }
+
+    @include greyline(calc(100% + 60px), -30px);
+  }
+
+  &-content {
+    h1 {
+      margin-top: 20px;
+    }
+
+    &-heading {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+      position: relative;
+      padding-bottom: 20px;
+
+      p {
+        &:nth-child(2) {
+          opacity: 0.5;
+        }
+      }
+
+      @include greyline(100%, 0);
+    }
+
+    &-body {
+      padding: 10px 0;
+      width: 500px;
+      position: relative;
+      p {
+        font-size: 14px;
+        line-height: 1.7;
+        color: $textgrey-medium;
+      }
+
+      @include greyline(100%, 0);
+    }
+
+    &-attachment {
+      cursor: pointer;
+      margin: 15px 0;
+      padding: 4px 7px;
+      display: inline-block;
+      border: 1px solid #ebebeb;
+      border-radius: 3px;
+
+      p {
+        display: inline-block;
+        font-size: 10px;
+      }
+
+      img {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+
+  .sender {
+    width: 300px;
+    h5 {
+      font-size: 18px;
+    }
+
+    img {
+      width: 45px;
+      height: 45px;
+    }
+    p {
+      font-weight: 600;
+      font-size: 12px;
+    }
+  }
+
+  button {
+    &:last-child {
+      margin-left: 10px;
+    }
+  }
+}
